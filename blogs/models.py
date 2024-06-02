@@ -5,8 +5,8 @@ from django.contrib.auth.models import User
 
 class Category(models.Model):
     category_name = models.CharField(max_length=50, unique=True)
-    create_at = models.DateTimeField(auto_now_add=True)
-    update_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     class Meta: 
         verbose_name_plural = 'categories'
