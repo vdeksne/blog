@@ -9,7 +9,7 @@ class Category(models.Model):
     update_at = models.DateTimeField(auto_now=True)
 
     class Meta: 
-        verbose_name_plural = 'Categories'
+        verbose_name_plural = 'categories'
 
     def __str__(self):
         return self.category_name
