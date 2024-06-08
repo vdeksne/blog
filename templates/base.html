@@ -1,13 +1,15 @@
 <!-- Header -->
 {% load static %}
 
+<link href="{% static 'css/blog.css' %}" rel="stylesheet">
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django Blogs</title>
+    <title>Women's Network</title>
     <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <link href="{%static 'css/blog.css'%}" rel="stylesheet">
@@ -18,7 +20,13 @@
       <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
           <div class="col-4 pt-1">
-            <a class="blog-header-logo text-dark" href="/">Django Blog</a>
+            <a class="blog-header-logo text-dark logo-main" href="/">
+              <svg width="105" height="79" viewBox="0 0 105 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M46.06 0.00684983C50.4695 0.0513727 54.879 0.0958961 59.2885 0.140419C66.371 12.4116 73.4535 24.6862 80.5361 36.9574C84.8123 29.9057 89.0885 22.8539 93.3647 15.8022C97.152 15.8467 100.936 15.8913 104.723 15.9358C96.7521 29.7242 88.7774 43.516 80.8061 57.3044C71.4539 41.2385 62.0982 25.1726 52.746 9.10665C47.1777 18.5215 41.6095 27.9398 36.0412 37.3547C34.1714 33.9641 32.2982 30.5701 30.4285 27.1795C35.6412 18.1208 40.8506 9.06212 46.0634 0L46.06 0.00684983Z" fill="#0D1F2D"/>
+                <path d="M0 15.9093H11.2305C19.52 29.99 27.8061 44.0672 36.0956 58.1479C41.6219 48.7927 47.1483 39.4341 52.6712 30.0789C57.9752 39.2118 63.2759 48.3482 68.5799 57.4811C64.7019 57.5256 60.8273 57.57 56.9493 57.6145C55.5233 55.2073 54.0972 52.8035 52.6712 50.3963C47.1449 59.7515 41.6185 69.1101 36.0956 78.4653C24.5539 58.7291 0.489026 17.024 0 15.9093Z" fill="#BB2649"/>
+                </svg>
+                
+            </a>
           </div>
           <div class="col-4">
             <form action="{% url 'search' %}" method="GET">

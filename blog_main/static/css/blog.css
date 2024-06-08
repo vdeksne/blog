@@ -68,3 +68,22 @@
     margin-bottom: 0;
   }
   
+/* .logo-main {
+  width: 21.5625rem;
+  height: 4.90406rem;
+}
+
+.logo-main img {
+  width:100%;
+  height: auto;
+}
+
+.container {
+  background-color: antiquewhite;
+} */
+
+.btn-warning {
+  color: #0D1F2D !important;
+  background-color: #0D1F2D !important;
+  border-color: #0D1F2D !important;
+}
