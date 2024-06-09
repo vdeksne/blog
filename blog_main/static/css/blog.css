@@ -110,9 +110,30 @@ body {
 }
 
 .input-group {
-  margin-bottom: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .container {
   margin-bottom: 2rem !important;
+}
+
+/* @media (max-width: 530px) {
+  .align-items-center {
+    align-items: start !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0;
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    align-items: start !important;
+}
+
+
+} */
+
+hr {
+  margin-top: 0 !important;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
 }
